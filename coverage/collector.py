@@ -324,9 +324,9 @@ class Collector(object):
             print("self._collectors:")
             for c in self._collectors:
                 print("  {!r}\n{}".format(c, c.origin))
-        assert self._collectors[-1] is self, (
-            "Expected current collector to be %r, but it's %r" % (self, self._collectors[-1])
-        )
+        # assert self._collectors[-1] is self, (
+        #     "Expected current collector to be %r, but it's %r" % (self, self._collectors[-1])
+        # )
 
         self.pause()
 
